@@ -1,0 +1,58 @@
+front-End Development
+HTML
+CSS
+Javascript
+
+Back-end Deveolpment
+Javascipt
+node.js
+Mongo DB
+
+
+DOM -- Document object model{html,heads, body}
+SEO --SEARCH ENGINE OPTIMISATION
+
+for mockup or wireframe use draw.io
+
+notes about html:
+table tag, thead, tr, form..for
+
+blocking elements--thry dont want other elemts to sit next to them
+li,p,section
+non-blocking--span,a,input,level
+google
+html input elements**
+select name=""----
+attribute value*
+the way to submitt forms by (1)submit or (2)input
+<input
+details tag*(summary)
+video in html:
+video tag---source
+<iframe tag...checkit out too*
+
+<a href="#skills"
+
+css note:
+.header{
+
+  width: 150px; 
+   padding: 20px; 
+   border: 1px solid #999;
+   margin: 0 20px 20px 0;
+   float: left; 
+   position: relative; 
+   -moz-border-radius: 20px;  
+   -webkit-border-radius: 20px; 
+   border-radius: 20px; 
+   display: inline;
+}
+
+remember <pre tag...you can have multiple line and they stay the way they are
+
+NOTE:
+CHECK OUT FLEXBOX HELP WITH CSS
+
+css notes:
+distance between lines in css use:
+line-height: 1.5;
