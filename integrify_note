@@ -56,3 +56,32 @@ CHECK OUT FLEXBOX HELP WITH CSS
 css notes:
 distance between lines in css use:
 line-height: 1.5;
+
+today 08/08/2018
+slectors tags
+pseudo class we have discussed  also:
+block, inline-block and positioning
+
+we learn how to use boiler plate in VS code
+script tag you can include JS BUT  for now we can skip it,
+use of <div> elements--as block elements
+explantion of div elements in details
+border,height,width
+background: color url('sss') diff btn background-color: blue;
+diff btwn inline---u cant change the width and the height
+inlineblock is opposite to inline
+display: inline-block;
+
+*The importanceof inline,inline-block etc
+
+we talk about Position
+by default is static....
+there is relative(almost static like a boat in the sea),absolute(piled together),sticky etc
+ we learn how to use BOX SIZING:---NEW Feature to adjust width and lenghth of HTML elements
+remember to add box-sizing: border box so u dont need to calculate margins etc
+
+Pseudo classes*
+pseudo selectors e.g a:link, li a:hover
+
+CSS combinators
+like paragraphs inside the divs
