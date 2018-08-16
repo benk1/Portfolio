@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HMTL & CSS</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+  <link rel="stylesheet" type="text/css" href="/project-2/assignment-2.css" media="screen" />
+</head>
+
+<body>
+  <section class="header">
+    <header>
+      <img src="/project-2/assets/images/Header-img.png" alt="header Image" style="transform:rotate(360deg);" width="100" height="100">
+      <pre><h1>POWERFULY SIMPLE WITH A
+SQUEEKY CLEAN DESIGN</h1>
+        <pre>
+        <h6 id="text" class="header">Find out how you can offer quick and poweful
+        solution to your customers now!</h6>
+        <br>
+        <h6 id="logo" class="header">LEARN MORE</h6>
+      <h5>CREATE A POWERFULL SOLUTION NOW!</h5>
+       <div class="triangle"></div>
+         
+       <h3>GET STARTED</h3>
+      
+    </header>
+  </section>
+    
+  <section id="border">
+      <div class="icons1"></div>
+      <div class="lorem">
+          <h6 id="superb">SUPERB RESPONSE</h6>
+        <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.<br>Eligendi non quis<br> culpanesciunt nihil aut nostrum<br>explicabo reprehenderit</p>
+        <h6>READ MORE</h6>
+        </div>
+      <i class="fa fa-mobile-alt"></i>
+      
+      
+      <div class="icons2"></div>
+      <div class="lorem1">
+      <h6 id="squeeky">SQUEEKY CLEAN</h6>
+        <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.<br>Eligendi non quis<br> culpanesciunt nihil aut nostrum<br>explicabo reprehenderit</p>
+        <h6>READ MORE</h6>
+        </div>
+        
+      <i class="fa fa-desktop" style="color: gray;" style="font-size: 20px;"></i>
+      <div class="icons3"></div>
+      <div class="lorem2">
+      <h6 id="multi">MULTI PURPOSE</h6>
+        <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.<br>Eligendi non quis<br> culpanesciunt nihil aut nostrum<br>explicabo reprehenderit</p>
+        <h6>READ MORE</h6>
+        </div>
+      <i class="fa fa-laptop" style="color: gray;" style="font-size: 20px;"></i>
+      <div class="icons4"></div>
+      <div class="lorem3">
+      <h6 id="high">HIGHLY FLEXIBLE</h6>
+        <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.<br>Eligendi non quis<br> culpanesciunt nihil aut nostrum<br>explicabo reprehenderit</p>
+        <h6>READ MORE</h6>
+        </div>
+      <i class="fa fa-recycle" style="color: gray;" style="font-size: 20px;"></i>
+  </section>
+
+  <section class="recent-work">
+    <div class="images">
+        <img class="image1" src="/project-2/assets/images/img-placeholder.png" alt="triangle Images" style="transform:rotate(360deg);" width="70" height="70">
+        <div class="style-img">
+        <h6>Blog Title</h6>
+        <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.<br>Eligendi non quis<br></p>
+        </div>
+    </div>
+
+    <div class="images">
+        <img class="image1" src="/project-2/assets/images/img-placeholder.png" alt="triangle Images" style="transform:rotate(360deg);" width="70" height="70">
+        <div class="style-img">
+        <h6>Blog Title</h6>
+        <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.<br>Eligendi non quis<br></p>  
+        </div>  
+    </div>
+    <div class="images">
+        <img class="image1" src="/project-2/assets/images/img-placeholder.png" alt="triangle Images" style="transform:rotate(360deg);" width="70" height="70">
+        <div class="style-img">
+        <h6>Blog Title</h6>
+        <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.<br>Eligendi non quis<br></p>
+        </div>
+    </div>
+  </section>
+
+  <section class="testomonial">
+    <div class="John">
+      <h6>John Smith</h6>
+      <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.<br>Eligendi non quis<br></p>
+    </div>
+
+    <div class="John">
+        <h6>John Smith</h6>
+        <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.<br>Eligendi non quis<br></p>
+      </div>
+
+      <div class="design">
+        <h6>Design</h6>
+        <strong>The Design</strong>
+        <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.<br>Eligendi non quis<br> culpanesciunt nihil aut nostrum<br>explicabo reprehenderit</p>
+        <br>
+        <p></p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.<br>Eligendi non quis<br> culpanesciunt nihil aut nostrum<br>explicabo reprehenderit</p>
+        <button>READ MORE</button>
+      </div>
+
+      <div class="production">
+          <h6>production</h6>
+        </div>
+  </section>
+
+  <section>
+    <footer>
+
+    </footer>
+  </section>
+
+</body>
+
+</html>
+
+css
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: whitesmoke;
+}
+
+header {
+  position: relative;
+  display: inline-block;
+  background-color: #404040;
+  width: 100%;
+  height: 410px;
+}
+
+img {
+  position: relative;
+  left: 10%;
+  width: 40%;
+  height: auto;
+}
+
+pre h1 {
+  position: relative;
+  left: 50%;
+  bottom: 315px;
+  color: white;
+}
+
+#text {
+  position: relative;
+  left: 50%;
+  bottom: 378px;
+  color: black;
+}
+
+#logo {
+  position: relative;
+  display: inline-block;
+  left: 46%;
+  bottom: 340px;
+  background-color: DodgerBlue;
+  padding-top: 10px;
+
+  border: 2px solid DodgerBlue;
+  margin-left: auto;
+  margin-right: auto;
+  width: 110px;
+  height: 15px;
+  text-align: center;
+  color: white;
+}
+
+h5 {
+  position: relative;
+  display: inline-block;
+  border: 2px solid #42a1f4;
+  width: 550px;
+  height: 40px;
+  margin-left: 1px;
+  margin-right: 500px;
+  bottom: 300px;
+  left: 80px;
+  padding-top: 26px;
+  padding-left: 57px;
+  padding-right: 300px;
+  background-color: #42a1f4;
+  color: white;
+}
+
+.triangle {
+  position: relative;
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  bottom: 320px;
+  left: 74px;
+  /*background-color: red;*/
+  /*border: 30px solid gray;*/
+  border-top: 60px solid #42a1f4;
+  border-right: 60px solid transparent;
+  /*border-bottom: 60px solid yellow;*/
+  border-left: 0px solid transparent;
+}
+
+h3 {
+  position: relative;
+  display: inline-block;
+  left: 46%;
+  bottom: 454px;
+  background-color: white;
+  padding-top: 3px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: 2px solid #42a1f4;
+  margin-left: 160px;
+  margin-right: auto;
+  width: 80px;
+  height: 23px;
+  text-align: center;
+  color: black;
+}
+
+.icons1 {
+  position: relative;
+  display: inline-block;
+  /*display: inline;*/
+  background: black;
+  color: gray;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  left: 90px;
+  right: 70px;
+  bottom: 490px;
+  margin: 90px;
+  margin-right: 170px;
+}
+
+.icons2 {
+  position: relative;
+  display: inline-block;
+  /*display: inline;*/
+  background: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  left: 290px;
+  right: 70px;
+  bottom: 833px;
+  margin: 90px;
+  margin-right: 170px;
+}
+
+.icons3 {
+  position: relative;
+  display: inline-block;
+  /*display: inline;*/
+  background: dodgerblue;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  left: 590px;
+  right: 570px;
+  bottom: 1208px;
+  margin: 90px;
+  margin-right: 170px;
+}
+
+.icons4 {
+  position: relative;
+  display: inline-block;
+  /*display: inline;*/
+  background: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  left: 810px;
+  right: 70px;
+  bottom: 1585px;
+  margin: 90px;
+  margin-right: 170px;
+}
+
+.fa-mobile-alt {
+  position: relative;
+  display: inline-block;
+  color: gray;
+  margin-top: 100px;
+  width: 50px;
+  height: 50px;
+  color: gray;
+  bottom: 944px;
+  right: 50px;
+  left: 198px;
+}
+
+.fa-desktop {
+  position: relative;
+  display: inline-block;
+  margin-top: 100px;
+  width: 50px;
+  height: 50px;
+  color: gray;
+  bottom: 1320px;
+  right: 50px;
+  left: 450px;
+}
+
+.fa-laptop {
+  position: relative;
+  display: inline-block;
+  margin-top: 100px;
+  width: 50px;
+  height: 50px;
+  color: gray;
+  bottom: 1690px;
+  right: 60px;
+  left: 750px;
+}
+
+.fa-recycle {
+  position: relative;
+  display: inline-block;
+  margin-top: 100px;
+  width: 50px;
+  height: 50px;
+  color: gray;
+  bottom: 1950px;
+  right: 0px;
+  left: 970px;
+}
+
+#superb {
+  position: relative;
+  display: inline-block;
+  font-size: 8px;
+  font-style: normal;
+  color: gray;
+  bottom: 635px;
+  right: 220;
+  left: 140px;
+}
+
+#squeeky {
+  position: relative;
+  display: inline-block;
+  font-size: 8px;
+  font-style: normal;
+  color: gray;
+  bottom: 1010px;
+  right: 100;
+  left: 425px;
+}
+
+#multi {
+  position: relative;
+  display: inline-block;
+  font-size: 8px;
+  font-style: normal;
+  color: gray;
+  bottom: 1385px;
+  right: 220;
+  left: 720px;
+}
+
+#high {
+  position: relative;
+  display: inline-block;
+  font-size: 8px;
+  font-style: normal;
+  color: gray;
+  bottom: 1765px;
+  right: 0;
+  left: 940px;
+}
+/*
+em {
+  position: relative;
+  display: inline-block;
+  color: black;
+  /*bottom: 655px;*/
+/*left: 120px;*/
+/*}*/
+
+.lorem p {
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  color: gray;
+  bottom: 540px;
+  right: 0px;
+  left: 500;
+}
+
+.lorem1 p {
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  color: gray;
+  bottom: 910px;
+  right: 10px;
+  left: 1800;
+  padding: 0px;
+  padding-left: 43%;
+}
+
+.lorem2 p {
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  color: gray;
+  bottom: 1288px;
+  right: 10px;
+  left: 2000;
+  padding: 0px;
+  padding-left: 25%;
+}
+
+.lorem3 p {
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  color: gray;
+  bottom: 1665px;
+  right: 100px;
+  left: 5000;
+  padding-left: 68%;
+}
+
+.lorem h6 {
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  color: gray;
+  bottom: 570px;
+  right: 50px;
+  left: 380;
+}
+
+.lorem h6 {
+  position: relative;
+  display: inline-block;
+  left: -13%;
+  bottom: 488px;
+  background-color: DodgerBlue;
+  padding-top: 10px;
+  border: 2px solid DodgerBlue;
+  margin-left: auto;
+  margin-right: auto;
+  width: 110px;
+  height: 15px;
+  text-align: center;
+  color: white;
+}
+
+.lorem1 h6 {
+  position: relative;
+  display: inline-block;
+  left: -35%;
+  bottom: 870px;
+  background-color: DodgerBlue;
+  padding-top: 10px;
+  border: 2px solid DodgerBlue;
+  margin-left: auto;
+  margin-right: auto;
+  width: 110px;
+  height: 15px;
+  text-align: center;
+  color: white;
+}
+
+.lorem2 h6 {
+  position: relative;
+  display: inline-block;
+  left: 70px;
+  bottom: 1250px;
+  background-color: DodgerBlue;
+  padding-top: 10px;
+  border: 2px solid DodgerBlue;
+  margin-left: auto;
+  margin-right: auto;
+  width: 110px;
+  height: 15px;
+  text-align: center;
+  color: white;
+}
+
+.lorem3 h6 {
+  position: relative;
+  display: inline-block;
+  left: -260px;
+  bottom: 1630px;
+  background-color: DodgerBlue;
+  padding-top: 10px;
+  border: 2px solid DodgerBlue;
+  margin-left: auto;
+  margin-right: auto;
+  width: 110px;
+  height: 15px;
+  text-align: center;
+  color: white;
+}
+.images {
+  display: inline-block;
+  width: 200px;
+  /*border: 1px solid yellow;*/
+  margin: 10px;
+}
+
+.image1 {
+  width: 100%;
+  position: static;
+}
+
+.recent-work {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.style-img {
+  background-color: whitesmoke;
+  display: inline-block;
+  font-size: 12px;
+}
+
+
+today:
+ <div class="design">
+      <h3>The design</h3>
+      <p>Lorem ipsum dolor sit amet,
+        <br>consectetur adipisicing elit.
+        <br>Eligendi non quis
+        <br> culpanesciunt nihil aut nostrum
+        <br>explicabo reprehenderit</p>
+
+      <p>Lorem ipsum dolor sit amet,
+        <br>consectetur adipisicing elit.
+        <br>Eligendi non quis
+        <br> culpanesciunt nihil aut nostrum
+        <button>READ MORE</button>
+    </div>
+
+unnecessary css..
+*.icons1 {
+  position: relative;
+  display: inline-block;
+  /*display: inline;*/
+  background: black;
+  color: gray;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  left: 90px;
+  right: 70px;
+  bottom: 490px;
+  margin: 90px;
+  margin-right: 170px;
+}
+
+.icons2 {
+  position: relative;
+  display: inline-block;
+  /*display: inline;*/
+  background: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  left: 290px;
+  right: 70px;
+  bottom: 833px;
+  margin: 90px;
+  margin-right: 170px;
+}
+
+.icons3 {
+  position: relative;
+  display: inline-block;
+  /*display: inline;*/
+  background: dodgerblue;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  left: 590px;
+  right: 570px;
+  bottom: 1208px;
+  margin: 90px;
+  margin-right: 170px;
+}
+
+.icons4 {
+  position: relative;
+  display: inline-block;
+  /*display: inline;*/
+  background: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  left: 810px;
+  right: 70px;
+  bottom: 1585px;
+  margin: 90px;
+  margin-right: 170px;
+}

@@ -85,3 +85,9 @@ pseudo selectors e.g a:link, li a:hover
 
 CSS combinators
 like paragraphs inside the divs
+
+FLEX-BOX 13.08.2018
+you need a flexcontainer, and flex items
+horizontal- main axis
+vertical axis
+
