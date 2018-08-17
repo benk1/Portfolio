@@ -58,6 +58,18 @@ h1 {
   width: 75%;
   margin: 0 auto;
 }
+
+.get-intouch::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  width: 20;
+  height: 10;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 60px solid dodgerblue;
+}
 .last-header h4,
 .get-intouch h4 {
   width: 75%;
@@ -149,6 +161,23 @@ span {
 
 .recent-work {
   display: inline-block;
+}
+
+.recent-work:hover {
+  background: #fff;
+  box-shadow: 8px 0 22px -6px #afafaf;
+}
+
+.recent-work::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 0px;
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 60px solid #fff;
 }
 
 button h3 {
@@ -348,4 +377,11 @@ h4.about-us {
 /*Border Images*/
 .image2 {
   height: 80%;
+}
+
+.blank-box {
+  display: inline-block;
+  background-color: white;
+  height: 40px;
+  color: black;
 }
