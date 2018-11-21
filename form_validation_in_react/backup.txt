@@ -1,0 +1,143 @@
+import React, { Component } from 'react'
+/*const ErrorFeedback = props => (
+    <p className={props.error ? 'invalid' : 'valid'}>{props.error}</p>
+  );*/
+ class AddUser extends Component {
+    state = {
+         firstName: "",
+         lastName: "",
+         email: "",
+         age: "",
+         touch: {
+            firstName: false,
+            lastName: false,
+            age: false,
+            email: false,
+          },
+        
+     }
+
+     handleChange = e => {
+        let target = e.target;
+        let name = target.name;
+        let value = target.type === 'checkbox' ? target.checked : target.value;
+        this.setState ({
+          [name]: value,
+        });
+        //console.log (value);
+      };
+      //[e.target.name]: e.target.value
+
+      handleBlur = e => {
+        let name = e.target.name;
+        this.setState ({
+          touch: {...this.state.touch, [name]: true},
+        });
+      }
+
+      handleSubmit = e => {
+        e.preventDefault ();
+        this.props.addUser (this.state);
+      };
+
+      validate = (firstName,lastName,email,age) => {
+        const errors = {
+          firstName: "",
+          lastName: '',
+          email: "",
+          age: "",
+        };
+        
+        if (this.state.touch.firstName && firstName.length < 3) {
+            errors.firstName = 'First Name should be >=3 characters.';
+        } else if (this.state.touch.firstName && firstName.length > 15) {
+          errors.firstName = 'First Name should be <=15 characters.';
+        }
+        if (this.state.touch.lastName && lastName.length < 3) {
+          errors.lastName = 'Last Name should be >=3 characters';
+        } else if (this.state.touch.lastName && lastName.length > 15) {
+          errors.lastName = 'Last Name should be <=15 characters.';
+        }
+
+        if (this.state.touch.age && Number(age) < 40) {
+            errors.age = 'Age should be >=50 ';
+          } else if (this.state.touch.age && Number(age) > 15) {
+            errors.age = 'Age should be <=15 ';
+          }
+    
+        return errors;
+      };
+  render() {
+      let {firstName, lastName,email,age} = this.state;
+      const errors = this.validate (firstName,lastName,email,age);
+      console.log(errors)
+    return (
+        <form onSubmit={this.handleSubmit}>
+        {/*<label>First Name:</label>*/}
+        <input
+          type="text"
+          name="firstName"
+          value={this.state.firstName || ""}
+          placeholder="First Name"
+          onChange={this.handleChange}
+          onBlur={this.handleBlur}
+        />
+       
+      <br />
+      <p id="error">{errors.firstName}</p>
+
+      
+        <input
+          type="text"
+          name="lastName"
+          value={this.state.lastName || ""}
+          placeholder="Last Name"
+          onChange={this.handleChange}
+          onBlur={this.handleBlur}
+        />
+        
+        <br />
+        <p id="error">{errors.lastName} </p>
+        
+        <input
+          type="text"
+          name="age"
+          value={this.state.age || ""}
+          placeholder="Your age"
+          onChange={this.handleChange}
+        />
+        <br />
+        <p id="error">{errors.age}</p>
+       
+        <input
+          type="email"
+          name="email"
+          value={this.state.email || ""}
+          placeholder="Email"
+          onChange={this.handleChange}
+        />
+        <br />
+        <p id="error">{errors.email} </p>
+        
+
+         <p>Leave Comments in box below: </p>
+
+<textarea
+  rows="10"
+  cols="60"
+  name="messsage"
+  value={this.state.message}
+  onChange={this.handleChange}
+/>
+<br />
+
+<button>Submit</button>
+      
+       
+
+      </form>
+    )
+  }
+}
+export default AddUser;
+

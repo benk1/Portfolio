@@ -1,0 +1,83 @@
+@import "compass/css3";
+* {
+  /*selector: 2px solid red;*/
+  /*box-sizing: solid green;*/
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+  max-width: 100%;   /*always must have in css file*/
+}
+header{
+  background: greenyellow;
+}
+
+/*img {
+  max-width: 100%;
+  height: auto; /*remeber to use this for pic not to oversize*/
+}*/
+/*styling paragraph of the main page*/
+ 
+
+
+.header-container {
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  
+}
+
+.image1 {
+  justify-content: center;
+  /*height: auto;*/
+  align-items: center;
+  max-width: 100%;
+}
+
+.header-links {
+  /*justify-content: right;*/
+  width: 40%;
+  /*margin: 50px;*/
+  text-align: center;
+  
+  /*margin-right: 250px;*/
+}
+
+.main-container{
+  display: flex;
+  /*border: 1px solid blue;*/
+  /*max-width: 200px;*/ 
+  margin: 70px;
+  flex-direction: row;
+  background: yellow;
+  
+}
+
+.sub-main{
+  display: flex;
+   flex-direction: column;
+   background: dodgerblue;
+   width: 463px;
+}
+
+p .sub-main {
+  width 10%;
+
+}
+div > p{
+  color: red;
+}
+
+img{
+  width: 100px;
+  height: 100px;
+  line-height: 60px;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+
+
+image2{
+  justify-content: flex-end;
+  width: 50%
+}

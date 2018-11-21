@@ -256,7 +256,7 @@ button {
 
 .design {
   width: 30%;
-  display: inline-block;
+  /*display: inline-block;*/
   vertical-align: top;
 }
 h2 .design {
@@ -270,7 +270,7 @@ h2 .design {
 }
 
 .John {
-  display: inline-block;
+  /*display: inline-block;*/
   border: 1px solid red;
   background-color: white;
   margin: 15px;
@@ -279,7 +279,7 @@ h2 .design {
   padding: 15px;
 }
 .John p {
-  width: 90%;
+  width: 80%;
 }
 
 h6 .design {

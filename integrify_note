@@ -91,3 +91,183 @@ you need a flexcontainer, and flex items
 horizontal- main axis
 vertical axis
 
+notes
+/*@media only screen and (max-width: 480px) {
+                                                              body {
+                                                                     background: green;
+                                                               }
+                                                         }*/
+
+
+
+
+studysynch for 20th august 2018
+FORMS IN HTML
+1)attributes
+target = _blank-----it open a new tab           label,input,id,label
+<form actions="/users.htmls"
+form can take actions, methods="POST",
+sometimes we need in form input
+<form>
+<label for..e.g firstname:>
+<input id="firsname"type="text" placeholder="firstname"
+<form>
+
+21/08/2018
+
+today discussion is based more on REGEX APART from what we discussed yesterday
+continuation of form with html
+regular expression not only for validations but also for something more
+e.g
+var pattern = "abc";
+regular expression--how to search a word or words from a string
+a* a exist once or many times
+a+atleast once
+[] this single
+[abc] one of those
+a.c means character a follwed by any character and follwed by c
+required key word is important...it checks for valid and invalidity of input classes
+placeholder:
+input:valid::placeholder
+
+
+
+22/08/2018(WEDNESDAY) NOTES:
+
+We have a lecture on Git and GithubGIT- VERSION cONTROL(to control versions)
+tokeep track on the version of your files
+
+for collaboration
+
+we learnt more abt other different versions control e.g bitbucket, subversion,Gitlab and github
+we also checkedd different basic command lines e.g
+for windows users and linux, mac users
+windows...Dir display , mkdir, touch etc
+ls-to see what is in directory, (mkdir-making directory- github-demo),cd-change directory, ls -a or ls -al(showing all hidden files and directory)
+how to make multiple folders by mkdir -- --- ---
+how to copy files using cp command
+how to rename file by using mv command
+how to remove files using rm command
+rm* remove all files
+rmdir remove directory
+------------------------------------------
+
+*How to sign-upin Github for new users
+how to create a repo
+then
+git init command is  for initializing
+.git is a hidden folder
+git status is just to see whats happening or the status of your files
+git add<file>
+git diff -to see thr diff btw the files
+git remote add origin master
+git push -u origin master
+git log-to see history of commits
+git add . (to add multiple files)
+git branch responsive----this is how to make a branch
+git checkout responsive--to switch from a branch to branch, in this case to branch responsive
+git checkout -b responvive.v2----another way to create a branch
+git checkout master---switch to master branch
+git pull---pulls from the remote back to a given branch
+git merge---you can merge a branch to master
+
+NOTES ABOUT PRESENTATION
+what is a programminglanguage:
+Coded language used by programmers to write instructions that a computer can understand to do what the programmer (or the computer user) wants.
+
+Read more: http://www.businessdictionary.com/definition/programming-language.html
+
+what is a variable:
+
+what is an array:
+IS A DATA STRUCTURE
+Array data structure. ... In computer science, an array data structure, or simply an array, is a data structure consisting of a collection of elements (values or variables), each identified by at least one array index or key.
+ARRAY ARE USED IN A COMPUTER TO ORGANISE DATA, 
+
+DESCRIPTION:
+in a computer or any programming language we must have a way to store data, one of the common way to store data is by using arrays.
+once you store data in an array the data in array they become elements of that particular array, you can store elements of different data types in an aray including numbers, strings even booleans(true or false)
+we access arrays by using indeces, in any array index 0 means the first element and so on and on.
+arrays are useful when u have a big collection of data.
+arrays have different methods where you can manipulate elements in array e.g array.length or size etc
+you can also loop an array and do whatever you wanna do with elements in an array.
+
+JAVASCRIPT OUTPUT:
+1)window.alert()- it allows you to display information via popup on the webpage.
+2)document.write(); - Allows you to display info directly to the body of the webpage.Using this method will override any existing page content with the info you provide.
+3) innerHTML
+Averycommon way of outputting info to a webpage using Js is tomodify the content of elements on the page. e.g getElementById("id").InnerHTML
+
+4) console.log --another way of outputting info using Js which doesnt involvemodifying the webpage.
+using the console.log() method you can output info to the Js browser console.
+mostlu used by developers for debugging
+
+note: the console is the tool we will focus on, it allows you to write and execute Js code right away.
+
+
+REGULAR EXPRESSION 04/10/2018
+1)PATTERN building validation
+2)
+let regex /pattern/i-case sensitive,g-global, m for multiline
+if you use case insesitive then u dont needa-z [A-Z]  :)
+*DONT USE i really..not so practical, only important g and i 
+/[abc]/ looking for  a or b or c
+// we look for that string passed in those slash
+
+/[0-9a-zA-Z]/  USE \d = 0-9,  \w = a-z (word character)
+/\D/ non-DIGITS
+/w/ NON-WORD CHARACTER
+
+/[A-Za-z]{3}/ allow only 3 characters
+/[A-Za-z]{3,5}$ ----we need 3 to 5 characters
+
+^ ---a place to start....negate
+$ once you find it stop
+
+disable..true or false..we use that for submit button
+. means any character
+* 0 times or more times
+?  zero or 1
+
+const inputs = querlyselectorAll("input") for 4 inputs
+inputs.addEventlistern("input", () => {
+})
+
+inputs.forEach(element => {
+elemnts.addEventlistener("input", (e) => {
+alert(e.target.ATTRIBUTE.name)
+or clg(e.target.name) or use (attribue.name)
+formValidator(e.target.value, pattern[e.target.name])
+})
+});
+
+const patterns = {
+firstNmae: /[^a-zA-Z]{3,5}$/,
+lastName: /[^a-zA-Z]{3,5}$/,
+email://
+}
+
+const formalValidoator = (element,pattern) => {
+ if(pattern.test(element.value){
+element.style.border...
+element.className = "valid"
+button.className = "submit-Button";
+button.disabled = false;
+
+}else
+
+}
+
+.submitt-button{
+bg:green
+}
+
+
+date 09/10/2018 NOTES:
+
+
+
+
+
+
+

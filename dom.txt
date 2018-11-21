@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=ss, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DOM</title>
+</head>
+<body>
+    <div id="div1">
+        <p id="heading1">Hexadecimal Color Generator</p>
+        <input id="filter" type="text" placeholder="Enter a number greater than 5">
+        <div2 class="btn">
+        <button id="button1" onclick="myVar = setTimeout(generateFunction,100)">Generate</button>
+        <button id="button2" onclick="clearTimeout(myVar)">Stop</button>
+        </div2>
+        <p id="para">Color change people emotions so put meaningful colors on your site.</p>
+    </div>
+    <div id="container"></div>
+  <style>
+   *{
+     box-sizing: border-box;
+   } 
+   
+   #div1{
+    background-color: #ffccff;
+    border: ipx solid black;
+    width: 700px;
+    f
+   }
+   #para{
+     font-size: 12px;
+     font-family: montserrat;
+     text-align: center;
+   }
+   #heading1{
+     text-align: center;   
+     margin-top: 60px:
+   }
+   #filter{
+     margin-left: 100px;
+     padding-left: 40px;
+     padding-right: 20px;
+   }
+   .btn{
+     margin-left: 130px;
+   }
+   #button1{
+    background-color: #38e282;
+   }
+   #button2{
+     background-color: #d94019;
+   }
+   
+  </style> 
+  <script>
+  function randomHexaNumberGenerator(num){
+    let result = "#";
+    for(let i = 0; i < 6; i++){
+      result += Math.floor(Math.random() * 16).toString(16);
+    }
+    return result;
+  }
+
+  function generateFunction() {
+    return content();
+  }
+  
+function content(){
+  const wrapper = document.createElement('div');
+  wrapper.id = "wrapperId";
+  const inputNumber = document.querySelector('#filter').value;
+  const num = inputNumber < 5
+              ? 5
+              : inputNumber;
+
+    for(let i = 0; i < (num); i++){
+    const singleDiv = document.createElement('div');
+    singleDiv.textContent = i + 1 + '.' + randomHexaNumberGenerator();
+    singleDiv.style.backgroundColor = randomHexaNumberGenerator();
+    const copyButton = document.createElement('button');
+    copyButton.innerHTML = 'copy';
+    singleDiv.appendChild(copyButton);
+    wrapper.appendChild(singleDiv);
+  }
+  const container = document.getElementById("container");
+  container.innerHTML = "";
+  container.appendChild(wrapper);
+}
+  </script>
+</body>
+</html>
+
+DOM ASSIGNMNET ABOUT TABLE
+function generateTable() {
+  // get the reference for the body
+  var body = document.getElementsByTagName("body")[0];
+ 
+  // creates a <table> element and a <tbody> element
+  var tbl = document.createElement("table");
+  var tblBody = document.createElement("tbody");
+ 
+  // creating all cells
+  for (var i = 0; i < 2; i++) {
+    // creates a table row
+    var row = document.createElement("tr");
+ 
+    for (var j = 0; j < 2; j++) {
+      // Create a <td> element and a text node, make the text
+      // node the contents of the <td>, and put the <td> at
+      // the end of the table row
+      var cell = document.createElement("td");
+      var cellText = document.createTextNode("cell in row "+i+", column "+j);
+      cell.appendChild(cellText);
+      row.appendChild(cell);
+    }
+ 
+    // add the row to the end of the table body
+    tblBody.appendChild(row);
+  }
+ 
+  // put the <tbody> in the <table>
+  tbl.appendChild(tblBody);
+  // appends <table> into <body>
+  body.appendChild(tbl);
+  // sets the border attribute of tbl to 2;
+  tbl.setAttribute("border", "2");
+
